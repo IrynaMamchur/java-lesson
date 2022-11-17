@@ -9,6 +9,13 @@ public class Task12 {
         char[] first = {'a','b','c','d','e'};
         char[] second = {'f','g','h','i','g'};
         char[] result = new char[first.length + second.length];
+
+        for (int i = 0; i < first.length; i++) {
+            result[i] = first[i];
+        }
+        for (int i = 0; i < second.length; i++) {
+            result[i + first.length] = second[i];
+        }
         System.out.println((Arrays.toString(result)));
     }
 }
